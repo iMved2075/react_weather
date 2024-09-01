@@ -11,7 +11,7 @@ const Temperature = () => {
 
   const getWeatherInfo = async () => {
     try {
-      let url = `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=${searchValue}`
+      let url = `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=${searchValue}`
 
       const res = await fetch(url)
       const data = await res.json()
